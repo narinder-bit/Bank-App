@@ -18,11 +18,11 @@ When the application is  launched the customer should be able to open an account
 
 The application should be able to allow the customer to withdraw cash from the account. 
 
-    *It is done when a customer enters an amount and press withdraw button 
+    * It is done when a customer enters an amount and press withdraw button 
 
-    *It is done when the balance is reduced by the amount. 
+    * It is done when the balance is reduced by the amount. 
 
-    *It is done when the  customer statement is updated. 
+    * It is done when the  customer statement is updated. 
 
  
 
@@ -36,9 +36,7 @@ The application should be able to allow the customer to deposit cash from the ac
 
  
 
- 
-
-The application should be able to allow the customer to transfer money from the account. 
+ The application should be able to allow the customer to transfer money from the account. 
 
     * It is done when a customer enters an amount and press transfer button 
 
@@ -51,16 +49,15 @@ The application should be able to allow the customer to transfer money from the 
 The application should be able to allow the customer to view the account details. 
 
     * It is done when the customer can enter the date range. 
-    *It is done when the customer presses the generates button and all transactions within the date range selected populate in a tabular form showing the deposit, withdrawal and balance. 
+   
+    * It is done when the customer presses the generates button and all transactions within the date range selected populate in a tabular form showing the deposit, withdrawal and balance. 
 
  
 
-The application should be able to allow to bank staff to view account details of all theAs a bank staff, I want to be able to view all account details of all the costumers in order to be able to make reports and analysis for the bank 
+The application should be able to allow to bank staff to view account details of all customers. 
 
- 
+    * It is done when the administration creates interface for bank staff. 
 
-It is done when the administration creates interface for bank staff. 
-
-It is done when a list of customers is populated after pressing the customer list button. 
+    * It is done when a list of customers is populated after pressing the customer list button. 
 
  
