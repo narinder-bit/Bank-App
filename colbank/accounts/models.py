@@ -24,7 +24,12 @@ class Customer(models.Model):
      
 
 class Transfer(models.Model):
-    pass
+    sender_id = models.models.ForeignKey("Customer", on_delete=models.CASCADE)
+    receiver_id = models.models.ForeignKey("Customer", on_delete=models.CASCADE)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    date_created = models.DateField(auto_now_add=True)
+
+
 class Widthrawal(models.Model):
 
      account_id = models.ForeignKey('Account', on_delete=models.RESTRICT, null=True)
