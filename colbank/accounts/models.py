@@ -25,9 +25,11 @@ class Customer(models.Model):
 
 class Transfer(models.Model):
     pass
-
 class Widthrawal(models.Model):
-    pass
 
+     account_id = models.ForeignKey('Account', on_delete=models.RESTRICT, null=True)
+     amount = models.DecimalField(max_digits=8,decimal_places=2)
+     date_created = models.DateField(auto_now_add=True)
+     
 class Deposit(models.Model):
     pass
