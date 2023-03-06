@@ -7,10 +7,10 @@ class Account(models.Model):
     pass
 class Customer(models.Model):
      # Fields
-     user_name = models.CharField(max_length=20, help_text='Enter  username')
-     user_email = models.CharField(max_length=20, help_text='Enter email address')
+     user_name = models.CharField(max_length=32, help_text='Enter  username')
+     user_email = models.EmailField(max_length=254, help_text='Enter email address')
      user= models.ForeignKey(User, on_delete=models.CASCADE)
-     
+
 
 class Transfer(models.Model):
     pass
