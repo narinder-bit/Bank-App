@@ -32,4 +32,7 @@ class Widthrawal(models.Model):
      date_created = models.DateField(auto_now_add=True)
      
 class Deposit(models.Model):
-    pass
+    account_id = model.models.ForeignKey("Account", verbose_name=_(""), on_delete=models.CASCADE)
+    amount = model.models.DecimalField( max_digits=10, decimal_places=2)
+    date_created = models.models.DateField( auto_now_add=True)
+    
