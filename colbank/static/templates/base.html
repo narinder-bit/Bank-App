@@ -1,16 +1,21 @@
+{% load static %}
+
 <html>
     <head>
-       <link rel="stylesheet" href="./style.css"> 
+       <link rel="stylesheet" href="{% static 'css/style.css'%}"> 
        <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-     
-
+    <style>
+        .main{
+            background-image:url('{% static 'img/kudi.jpg' %}');
+        }
+    </style>
 <div class="main">
    <nav>
     <div class="logo">
-        <img src="./img/2fc46daef08a3c03c8b4834a4e2317bd.png"/>
+        <img src="{% static 'img/2fc46daef08a3c03c8b4834a4e2317bd.png' %} "/>
     </div>
 
 <div class="menu_list">
@@ -24,17 +29,10 @@
 <button type="submit" value="input button" class="button"><a href="login.html" class="button">Login</a></button>
 </div>
 </nav>
-<div class="txt">
 
-    <h2>Say hello to 
-        rewarding<br>
-        banking</h2>
-<p>Welcome to City of Lincoln bank that makes every day <br>rewarding</p>
-    </div>
-       
-        
+    {% block content%}
 
-    </div>
+    {% endblock %}
 
 
 

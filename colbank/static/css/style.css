@@ -1,13 +1,12 @@
 /*main page css */
 .main
 {margin:auto;
-background-image:url('./Img/kudi.jpg');
+
 max-width: 1200px;
 height: 1000px;
 background-repeat: no-repeat;
 
 overflow: hidden;
-
 
 }
 
