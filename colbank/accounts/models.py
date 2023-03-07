@@ -24,20 +24,20 @@ class Customer(models.Model):
 
 
 class Transfer(models.Model):
-    sender_id = models.models.ForeignKey("Customer", on_delete=models.CASCADE)
-    receiver_id = models.models.ForeignKey("Customer", on_delete=models.CASCADE)
+    sender_id = models.ForeignKey("Account", on_delete=models.CASCADE, related_name='Transfer')
+    receiver_id = models.ForeignKey("Account", on_delete=models.CASCADE)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     date_created = models.DateField(auto_now_add=True)
 
 
 class Widthrawal(models.Model):
 
-     account_id = models.ForeignKey('Account', on_delete=models.RESTRICT, null=True)
+     account_id = models.ForeignKey('Account', on_delete=models.CASCADE, null=True)
      amount = models.DecimalField(max_digits=8,decimal_places=2)
      date_created = models.DateField(auto_now_add=True)
      
 class Deposit(models.Model):
-    account_id = model.models.ForeignKey("Account", verbose_name=_(""), on_delete=models.CASCADE)
-    amount = model.models.DecimalField( max_digits=10, decimal_places=2)
-    date_created = models.models.DateField( auto_now_add=True)
+    account_id = models.ForeignKey("Account", on_delete=models.CASCADE)
+    amount = models.DecimalField( max_digits=10, decimal_places=2)
+    date_created = models.DateField( auto_now_add=True)
     
