@@ -15,4 +15,5 @@ def dash_board(request):
 class DepositCreateView(CreateView):
     model = Deposit
     form_class = DepositForm
+    success_url ='/dashboard/'
     
