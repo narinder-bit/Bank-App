@@ -9,6 +9,8 @@ from .forms import DepositForm
 def home(request):
     return render(request, 'home_list.html', {})
 
+    
+
 def dash_board(request):
     return render(request, 'dashboard.html',{})
 
@@ -17,3 +19,6 @@ class DepositCreateView(CreateView):
     form_class = DepositForm
     success_url ='/dashboard/'
     
+
+def about(request):
+    return render(request, 'about.html',{})
