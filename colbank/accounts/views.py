@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import CreateView
 from . models import Deposit
+from .forms import DepositForm
 
 # Create your views here.
 
@@ -13,3 +14,5 @@ def dash_board(request):
 
 class DepositCreateView(CreateView):
     model = Deposit
+    form_class = DepositForm
+    
