@@ -21,5 +21,7 @@ urlpatterns = [
     path('', views.home, name='home.list'),
     path('dashboard/', views.dash_board, name='dash-board'),
      path('deposit/', views.DepositCreateView.as_view(), name='deposit.create'),
+     path('withdrawal/', views.WithdrawalCreateView.as_view(), name='withdrawal.create'),
+     path('transfer/', views.WithdrawalCreateView.as_view(), name='transfer.create'),
  
 ]
