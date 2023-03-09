@@ -22,7 +22,16 @@ urlpatterns = [
     path('dashboard/', views.dash_board, name='dash-board'),
      path('deposit/', views.DepositCreateView.as_view(), name='deposit.create'),
      path('about/', views.about, name='about'),
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
      path('withdrawal/', views.WithdrawalCreateView.as_view(), name='withdrawal.create'),
      path('transfer/', views.WithdrawalCreateView.as_view(), name='transfer.create'),
  
+>>>>>>> 15035425b68f54c45486bad6bf4749255f02e16e
+=======
+     path('withdrawal/', views.WithdrawalCreateView.as_view(), name='withdrawal.create'),
+     path('transfer/', views.WithdrawalCreateView.as_view(), name='transfer.create'),
+ 
+>>>>>>> 15035425b68f54c45486bad6bf4749255f02e16e
 ]
